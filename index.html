@@ -23,6 +23,30 @@
 
     <!-- Template Main CSS File -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            padding-top: 120px;
+        }
+
+        .header-area-6 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        .header__logo a,
+        .offset-logo a {
+            font-size: 42px;
+            line-height: 1;
+        }
+
+        section[id],
+        footer[id] {
+            scroll-margin-top: 130px;
+        }
+    </style>
 
 </head>
 
@@ -53,7 +77,7 @@
             <div class="side-info-content">
                 <div class="offset-widget offset-header">
                     <div class="offset-logo">
-                        <a href="index.html">RiverX</a>
+                        <a href="#home">RiverX</a>
                     </div>
                     <button id="side-info-close" class="side-info-close">
                         <i class="fas fa-times"></i>
@@ -89,7 +113,7 @@
             <div class="container large">
                 <div class="header-area-6__inner">
                     <div class="header__logo">
-                        <a href="index.html">RiverX</a>
+                        <a href="#home">RiverX</a>
                     </div>
                     <div class="header__middel">
                         <p>RiverX provides user centered <br>
@@ -107,66 +131,13 @@
 
     <nav class="main-menu-all d-none">
         <ul>
-            <li class="menu-item-has-children">
-                <a href="#">Home</a>
-                <ul class="dp-menu col-2">
-                    <li><a href="digital-agency.html">Digital Agency</a></li>
-                    <li><a href="modern-agency-2.html">Modern Agency 2</a></li>
-                    <li><a href="creative-agency.html">Creative Agency</a></li>
-                    <li><a href="it-solution.html">It solution</a></li>
-                    <li><a href="marketing-agency.html">Marketing Agency</a></li>
-                    <li><a href="web-design.html">Web Design</a></li>
-                    <li><a href="design-agency.html">Design Agency</a></li>
-                    <li><a href="web-development.html">Web Development</a></li>
-                    <li><a href="startup-agency.html">Startup Agency</a></li>
-                    <li><a href="modern-agency.html">Modern Agency</a></li>
-                    <li><a href="agency-portfolio.html">Agency Portfolio</a></li>
-                    <li><a href="portfolio-horizontal.html">Portfolio Horizontal</a></li>
-                    <li><a href="portfolio-line-effect.html">Portfolio Line Effect</a></li>
-                    <li><a href="portfolio-box-effect.html">Portfolio Box Effect</a></li>
-                    <li><a href="portfolio-vertical.html">Portfolio Vertical</a></li>
-                    <li><a href="portfolio-slicer.html">Portfolio Slicer</a></li>
-                    <li><a href="parallax-carousal.html">Parallax Carousal</a></li>
-                    <li><a href="portfolio-showcase.html">Portfolio Showcase</a></li>
-                </ul>
-            </li>
-            <li><a href="about.html">About Us</a></li>
-            <li class="menu-item-has-children">
-                <a href="#">Service</a>
-                <ul class="dp-menu">
-                    <li><a href="services.html">Core Services</a></li>
-                    <li><a href="services-2.html">Services ST. Pulse</a></li>
-                    <li><a href="services-3.html">Services ST. Morph</a></li>
-                    <li><a href="services-4.html">Services ST. Nova</a></li>
-                    <li><a href="services-5.html">Services ST. Zenith</a></li>
-                    <li><a href="services-6.html">Services ST. Prism</a></li>
-                    <li><a href="service-details.html">Service Details</a></li>
-                </ul>
-            </li>
-            <li class="menu-item-has-children">
-                <a href="#">Blog</a>
-                <ul class="dp-menu">
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="blog-details.html">Blog Details</a></li>
-                </ul>
-            </li>
-            <li class="menu-item-has-children">
-                <a href="#">Pages</a>
-                <ul class="dp-menu">
-                    <li><a href="portfolio.html">Core Portfolio</a></li>
-                    <li><a href="portfolio-2.html">Portfolio ST. Classic</a></li>
-                    <li><a href="portfolio-3.html">Portfolio ST. Minimal</a></li>
-                    <li><a href="portfolio-4.html">Portfolio ST. Modern</a></li>
-                    <li><a href="portfolio-5.html">Portfolio ST. Interactive</a></li>
-                    <li><a href="portfolio-6.html">Portfolio ST. Metro</a></li>
-                    <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="team-details.html">Team Details</a></li>
-                    <li><a href="faq.html">FAQ Page</a></li>
-                    <li><a href="404.html">404 Page</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -177,7 +148,7 @@
             <main>
 
                 <!-- hero area start  -->
-                <section class="hero-area-6">
+                <section class="hero-area-6" id="home">
                     <div class="container large">
                         <div class="hero-area-6-wrapper">
                             <div class="hero-area-6-wrapper__line">
@@ -217,7 +188,7 @@
                 <!-- hero area end  -->
 
                 <!-- work area start  -->
-                <section class="work-area-6">
+                <section class="work-area-6" id="portfolio">
                     <div class="container large">
                         <div class="work-area-6-inner">
                             <div class="works-wrapper-box">
@@ -226,12 +197,12 @@
                                         <div class="thumb">
                                             <div class="image scale" data-cursor-text="View Details"
                                                 data-cursor-text-red>
-                                                <a href="portfolio-details.html"><img
+                                                <a href="#portfolio"><img
                                                         src="assets/imgs/project/image-46.webp" alt="image"></a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="title"><a href="portfolio-details.html">RiverX Digital Agency HTML
+                                            <h3 class="title"><a href="#portfolio">RiverX Digital Agency HTML
                                                     Template</a></h3>
                                             <div class="meta">
                                                 <span class="tag">WordPress, Themeforest</span>
@@ -243,12 +214,12 @@
                                         <div class="thumb">
                                             <div class="image scale" data-cursor-text="View Details"
                                                 data-cursor-text-red>
-                                                <a href="portfolio-details.html"><img
+                                                <a href="#portfolio"><img
                                                         src="assets/imgs/project/image-36.webp" alt="image"></a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="title"><a href="portfolio-details.html">Al Khobar Uptown</a></h3>
+                                            <h3 class="title"><a href="#portfolio">Al Khobar Uptown</a></h3>
                                             <div class="meta">
                                                 <span class="tag">Visual Identity, Branding</span>
                                                 <span class="date">(2021)</span>
@@ -259,12 +230,12 @@
                                         <div class="thumb">
                                             <div class="image scale" data-cursor-text="View Details"
                                                 data-cursor-text-red>
-                                                <a href="portfolio-details.html"><img
+                                                <a href="#portfolio"><img
                                                         src="assets/imgs/project/image-34.webp" alt="image"></a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="title"><a href="portfolio-details.html">Save Me Saudia</a></h3>
+                                            <h3 class="title"><a href="#portfolio">Save Me Saudia</a></h3>
                                             <div class="meta">
                                                 <span class="tag">Communication, Social Media</span>
                                                 <span class="date">(2020)</span>
@@ -275,12 +246,12 @@
                                         <div class="thumb">
                                             <div class="image scale" data-cursor-text="View Details"
                                                 data-cursor-text-red>
-                                                <a href="portfolio-details.html"><img
+                                                <a href="#portfolio"><img
                                                         src="assets/imgs/project/image-31.webp" alt="image"></a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="title"><a href="portfolio-details.html">Lambax Nanak</a></h3>
+                                            <h3 class="title"><a href="#portfolio">Lambax Nanak</a></h3>
                                             <div class="meta">
                                                 <span class="tag">Strategy, Visual Identity, Re-branding</span>
                                                 <span class="date">(2022)</span>
@@ -291,12 +262,12 @@
                                         <div class="thumb">
                                             <div class="image scale" data-cursor-text="View Details"
                                                 data-cursor-text-red>
-                                                <a href="portfolio-details.html"><img
+                                                <a href="#portfolio"><img
                                                         src="assets/imgs/project/image-37.webp" alt="image"></a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="title"><a href="portfolio-details.html">RiverX Digital Agency HTML
+                                            <h3 class="title"><a href="#portfolio">RiverX Digital Agency HTML
                                                     Template</a></h3>
                                             <div class="meta">
                                                 <span class="tag">WordPress, Themeforest</span>
@@ -308,12 +279,12 @@
                                         <div class="thumb">
                                             <div class="image scale" data-cursor-text="View Details"
                                                 data-cursor-text-red>
-                                                <a href="portfolio-details.html"><img
+                                                <a href="#portfolio"><img
                                                         src="assets/imgs/project/image-38.webp" alt="image"></a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="title"><a href="portfolio-details.html">Dramatic Natok</a></h3>
+                                            <h3 class="title"><a href="#portfolio">Dramatic Natok</a></h3>
                                             <div class="meta">
                                                 <span class="tag">Communication, Campaign</span>
                                                 <span class="date">(2022)</span>
@@ -324,12 +295,12 @@
                                         <div class="thumb">
                                             <div class="image scale" data-cursor-text="View Details"
                                                 data-cursor-text-red>
-                                                <a href="portfolio-details.html"><img
+                                                <a href="#portfolio"><img
                                                         src="assets/imgs/project/image-39.webp" alt="image"></a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="title"><a href="portfolio-details.html">Keshtech Ventures</a>
+                                            <h3 class="title"><a href="#portfolio">Keshtech Ventures</a>
                                             </h3>
                                             <div class="meta">
                                                 <span class="tag">Visual Identity, Branding</span>
@@ -341,12 +312,12 @@
                                         <div class="thumb">
                                             <div class="image scale" data-cursor-text="View Details"
                                                 data-cursor-text-red>
-                                                <a href="portfolio-details.html"><img
+                                                <a href="#portfolio"><img
                                                         src="assets/imgs/project/image-40.webp" alt="image"></a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="title"><a href="portfolio-details.html">Pick and Jeep</a></h3>
+                                            <h3 class="title"><a href="#portfolio">Pick and Jeep</a></h3>
                                             <div class="meta">
                                                 <span class="tag">Visual Identity, Re-branding, Packaging</span>
                                                 <span class="date">(2021)</span>
@@ -357,12 +328,12 @@
                                         <div class="thumb">
                                             <div class="image scale" data-cursor-text="View Details"
                                                 data-cursor-text-red>
-                                                <a href="portfolio-details.html"><img
+                                                <a href="#portfolio"><img
                                                         src="assets/imgs/project/image-41.webp" alt="image"></a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="title"><a href="portfolio-details.html">Back to Macho School</a>
+                                            <h3 class="title"><a href="#portfolio">Back to Macho School</a>
                                             </h3>
                                             <div class="meta">
                                                 <span class="tag">Communication, Campaign , Social Media</span>
@@ -374,12 +345,12 @@
                                         <div class="thumb">
                                             <div class="image scale" data-cursor-text="View Details"
                                                 data-cursor-text-red>
-                                                <a href="portfolio-details.html"><img
+                                                <a href="#portfolio"><img
                                                         src="assets/imgs/project/image-42.webp" alt="image"></a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="title"><a href="portfolio-details.html">Cultural Talents</a></h3>
+                                            <h3 class="title"><a href="#portfolio">Cultural Talents</a></h3>
                                             <div class="meta">
                                                 <span class="tag">Communication, Campaign</span>
                                                 <span class="date">(2022)</span>
@@ -390,12 +361,12 @@
                                         <div class="thumb">
                                             <div class="image scale" data-cursor-text="View Details"
                                                 data-cursor-text-red>
-                                                <a href="portfolio-details.html"><img
+                                                <a href="#portfolio"><img
                                                         src="assets/imgs/project/image-43.webp" alt="image"></a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="title"><a href="portfolio-details.html">RiverX Digital Agency HTML
+                                            <h3 class="title"><a href="#portfolio">RiverX Digital Agency HTML
                                                     Template</a></h3>
                                             <div class="meta">
                                                 <span class="tag">WordPress, Themeforest</span>
@@ -407,12 +378,12 @@
                                         <div class="thumb">
                                             <div class="image scale" data-cursor-text="View Details"
                                                 data-cursor-text-red>
-                                                <a href="portfolio-details.html"><img
+                                                <a href="#portfolio"><img
                                                         src="assets/imgs/project/image-44.webp" alt="image"></a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="title"><a href="portfolio-details.html">Dramatic Natok</a></h3>
+                                            <h3 class="title"><a href="#portfolio">Dramatic Natok</a></h3>
                                             <div class="meta">
                                                 <span class="tag">Communication, Campaign</span>
                                                 <span class="date">(2022)</span>
@@ -423,12 +394,12 @@
                                         <div class="thumb">
                                             <div class="image scale" data-cursor-text="View Details"
                                                 data-cursor-text-red>
-                                                <a href="portfolio-details.html"><img
+                                                <a href="#portfolio"><img
                                                         src="assets/imgs/project/image-45.webp" alt="image"></a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <h3 class="title"><a href="portfolio-details.html">Keshtech Ventures</a>
+                                            <h3 class="title"><a href="#portfolio">Keshtech Ventures</a>
                                             </h3>
                                             <div class="meta">
                                                 <span class="tag">Visual Identity, Branding</span>
@@ -443,10 +414,15 @@
                 </section>
                 <!-- work area end  -->
 
+                <section id="about"></section>
+                <section id="services"></section>
+                <section id="team"></section>
+                <section id="blog"></section>
+
             </main>
 
             <!-- footer area start  -->
-            <footer class="footer-area-6">
+            <footer class="footer-area-6" id="contact">
                 <div class="footer-area-6-inner">
                     <div class="container large">
                         <div class="footer-widget-wrapper">
@@ -467,12 +443,12 @@
                                     <div class="footer-widget__content-item">
                                         <span>(02) Services</span>
                                         <ul class="footer-widget-nav-list">
-                                            <li><a href="contact.html">Art Direction</a></li>
-                                            <li><a href="contact.html">Web Design</a></li>
-                                            <li><a href="contact.html">Web Development</a></li>
-                                            <li><a href="contact.html">Brand Identity</a></li>
-                                            <li><a href="contact.html">Motion Design</a></li>
-                                            <li><a href="contact.html">3D Design</a></li>
+                                            <li><a href="#services">Art Direction</a></li>
+                                            <li><a href="#services">Web Design</a></li>
+                                            <li><a href="#services">Web Development</a></li>
+                                            <li><a href="#services">Brand Identity</a></li>
+                                            <li><a href="#services">Motion Design</a></li>
+                                            <li><a href="#services">3D Design</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -483,10 +459,10 @@
                         <div class="container large">
                             <div class="copyright-area-inner">
                                 <ul class="copyright-socail-list">
-                                    <li><a href="contact.html">Dribbble</a></li>
-                                    <li><a href="contact.html">Behance</a></li>
-                                    <li><a href="contact.html">Facebook</a></li>
-                                    <li><a href="contact.html">LinkedIn</a></li>
+                                    <li><a href="#contact">Dribbble</a></li>
+                                    <li><a href="#contact">Behance</a></li>
+                                    <li><a href="#contact">Facebook</a></li>
+                                    <li><a href="#contact">LinkedIn</a></li>
                                 </ul>
                                 <div class="copyright-text">
                                     <p class="text">© 2019 - 2025 <br>
